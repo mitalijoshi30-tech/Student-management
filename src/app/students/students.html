@@ -1,0 +1,73 @@
+<div class="students-container">
+
+  <h1>Student Management</h1>
+
+  <h2>Student List</h2>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      @for (student of students; track student.id) {
+
+        <tr>
+
+          <td>{{ student.id }}</td>
+
+          <td>{{ student.name }}</td>
+
+          <td>{{ student.course }}</td>
+
+          <td>{{ student.email }}</td>
+
+          <td>
+            <a
+              [routerLink]="['/students', student.id]"
+              class="button">
+              View Details
+            </a>
+          </td>
+
+        </tr>
+
+      }
+
+    </tbody>
+
+  </table>
+
+
+  <h2>Add New Student</h2>
+
+  <div class="form">
+
+    <input
+      type="text"
+      placeholder="Enter student name"
+      [(ngModel)]="studentName"
+    />
+
+    <input
+      type="email"
+      placeholder="Enter student email"
+      [(ngModel)]="studentEmail"
+    />
+
+    <button
+      (click)="addStudent()">
+      Add Student
+    </button>
+
+  </div>
+
+</div>

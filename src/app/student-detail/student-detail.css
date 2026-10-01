@@ -1,0 +1,55 @@
+.details {
+  width: 85%;
+  max-width: 700px;
+
+  margin: 40px auto;
+}
+
+.details h1 {
+  color: #1976d2;
+}
+
+.student-info {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-info h2 {
+  color: #1976d2;
+
+  font-size: 30px;
+
+  margin-top: 0;
+}
+
+.student-info p {
+  font-size: 18px;
+
+  margin: 15px 0;
+}
+
+.not-found {
+  padding: 20px;
+
+  background-color: #ffe0e0;
+
+  color: #a00000;
+
+  border-radius: 5px;
+}
+
+.details a {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  color: #1976d2;
+
+  text-decoration: none;
+}
